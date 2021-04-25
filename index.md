@@ -36,6 +36,7 @@ Sabemos que las informacion tiene que ser con color verde, si es color rojo esta
 sabemos que la lista de nota de cada usario estan permanente ,y  para entrar el juego tiene que  usar la API síncrona de Node.js para trabajar con el sistema de ficheros:
   
 1- Tenemos que guardar cada una de la lista de nota al usario corresponde.
+
 2- Si queremos cargar una nota desde los diferentes ficheros tienemos que ultilizar formato JSON almacenados en el directorio del usuario correspondiente.
 
 Sabemos que cada uno usario solo puede hacer procesamiento de texto a traves la línea de comandos, y distintos comandos tienen que gestionar con el paquete yargs.
