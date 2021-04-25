@@ -16,7 +16,7 @@ En esta practica, vamos a aprender como usar la aplicación de procesamiento de 
 Además, vamos a conocer como utilizar [yargs](https://www.npmjs.com/package/yargs) y [chalk](https://www.npmjs.com/package/chalk).
 
 ## 3. Ejercicios realizados
-```
+
 Descripción general sobre los requisitos de la aplicación de procesamiento de notas de texto.
 Los requisitos que debe cumplir la aplicación de procesamiento de notas de texto son los siguientes:
  1- La aplicacion de notas tiene que ser multiples usarios
@@ -34,10 +34,9 @@ Los requisitos que debe cumplir la aplicación de procesamiento de notas de text
     
     Sabemos que cada uno usario solo puede hacer procesamiento de texto a traves la línea de comandos, y distintos comandos tienen que gestionar con el paquete yargs.
 
-````
 
 ## 4. Conclusiones
-
+Como conclusion, hemos aprendido cosas nuevas como por ejemplo yargs y chalk. Asimismo hemos forzado el conocimiento sobre typescrit, API, etc. Ha sido una practica interesante. Me gustaria aprender más sobre dicho conocimiento.
 
 
 ## 5. Bibliografía
