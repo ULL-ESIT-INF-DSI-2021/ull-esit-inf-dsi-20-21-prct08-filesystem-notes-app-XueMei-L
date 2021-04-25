@@ -29,10 +29,10 @@ Los requisitos que debe cumplir la aplicación de procesamiento de notas de text
  3- Cada usario tiene su propio lista de nostas que son
  
 Hay que comprabar andes de añadir una nota si existe el mismo titulo o no , si existe va salir error , el contrario si no existe el mismo tiltulo se puede añadir una nueva nota a la lista.
-Para modificar una nota de la lista ,hay que comprobarlo si existe una una lista de la nota que vas a modidicar, si existe puedemos modificar la nota , el contrario si no existe ,saldrá error si vamos a eliminar una nota , tenemos que comprobar si existe el nota o no , si existe puedes eliminar ,el contrario si no existe no se puede eliminar y va salir error.
+Para modificar una nota de la lista, hay que comprobarlo si existe una una lista de la nota que vas a modidicar, si existe puedemos modificar la nota, el contrario si no existe , saldrá error si vamos a eliminar una nota, tenemos que comprobar si existe el nota o no, si existe puedes eliminar, el contrario si no existe no se puede eliminar y va salir error.
 Para listar  los nombres de la nota de la lista tenemos que utilizar el paquete chalk y se va salir con el color corresponde de cada unos de ellos.
-Si queremos leer una nota concreta,tenemos que comprabar si existe esta lista con estas nota o no ,si existe va salir con el color corresponde de paquete cha1k, el contrario no va salir nada.
-Sabemos que las informacion tiene que ser con color verde, si es color rojo esta error.
+Si queremos leer una nota concreta,tenemos que comprabar si existe esta lista con estas nota o no ,si existe va salir con el color corresponde de paquete cha1k, el contrario no va salir nada. Sabemos que las informacion tiene que ser con color verde, si es color rojo esta error.
+
 sabemos que la lista de nota de cada usario estan permanente ,y  para entrar el juego tiene que  usar la API síncrona de Node.js para trabajar con el sistema de ficheros:
   
 1- Tenemos que guardar cada una de la lista de nota al usario corresponde.
