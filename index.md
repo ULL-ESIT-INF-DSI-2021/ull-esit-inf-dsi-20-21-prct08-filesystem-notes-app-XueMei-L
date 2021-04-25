@@ -1,6 +1,6 @@
 
 
-# Práctica
+# Práctica 8 - Aplicacion de procesamiento de notas de texto
 
 ```
 Universidad: Universidad de La laguna
