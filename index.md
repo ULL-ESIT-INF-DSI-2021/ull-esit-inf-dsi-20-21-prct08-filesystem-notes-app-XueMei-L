@@ -49,9 +49,7 @@ Sabemos que cada uno usuario solo puede hacer procesamiento de texto a través d
 
 ### 3.1. Añadir una nota
 
-Para ```caso 1 - añadir una nota``` , realizamos con el comando ``add`` la siguiente función, lo que hace es, crear una nueva nota, con el nombre, el titulo, el cuerpo y el color correspondiente. (La siguiente imagen se muestra la estructura de creación de cada comando)
-
-![image-20210426041636328](imagenes/image-20210426041636328.png)
+Para ```caso 1 - añadir una nota``` , realizamos con el comando ``add`` la siguiente función, lo que hace es, crear una nueva nota, con el nombre, el titulo, el cuerpo y el color correspondiente. (La siguiente imagen se muestra la estructura de creación de cada comando
 
 ````handler(argv) {
 handler(argv) {
