@@ -51,8 +51,7 @@ Sabemos que cada uno usuario solo puede hacer procesamiento de texto a través d
 
 Para ```caso 1 - añadir una nota``` , realizamos con el comando ``add`` la siguiente función, lo que hace es, crear una nueva nota, con el nombre, el titulo, el cuerpo y el color correspondiente. (La siguiente imagen se muestra la estructura de creación de cada comando
 
-```
-handler(argv) {
+``````
 handler(argv) {
     //default colour is yellow 
     let colourNote: colours = colours.yellow;
@@ -65,7 +64,7 @@ handler(argv) {
      notes.addNote(argv.user, argv.title, argv.body, colourNote);
    }
 },
-```
+``````
 
 Y la siguiente imagen es la comprobación de comando ``add`` :
 
@@ -77,7 +76,7 @@ Y la siguiente imagen es la comprobación de comando ``add`` :
 
 Para ```caso 2 - modificar una nota``` , modifica una nota existente. se puede cambiar el nombre, el titulo, el cuerpo o  el color de la nota que sea cambiar. 
 
-````handler(argv) {
+``````
 handler(argv) {
     if (typeof argv.user === 'string' && typeof argv.title === 'string' && typeof argv.body === 'string' && typeof argv.color === 'string') {
       let colour: colours = colours.yellow;
@@ -89,7 +88,7 @@ handler(argv) {
       notes.modifyNote(argv.user, argv.title, argv.body, colour);
    }
 },
-````
+``````
 
 ![image-20210426042706028](imagenes/image-20210426042706028.png)
 
