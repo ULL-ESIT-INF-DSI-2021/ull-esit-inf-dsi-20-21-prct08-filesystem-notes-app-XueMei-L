@@ -33,9 +33,9 @@ Los siguientes son los casos necesarios que hay que implementar en la práctica.
 
 **Caso 2 - Para modificar una nota de la lista, hay que comprobarlo si existe una una lista de la nota que vas a modificar, si existe podemos modificar la nota , el caso contrario, saldrá errores también.**
 
-** Caso 3 - Realizar la eliminación de una nota, tenemos que comprobar si existe el nota o no , si existe puedes eliminar ,el contrario si no existe no se puede eliminar y indicando error.**
+**Caso 3 - Realizar la eliminación de una nota, tenemos que comprobar si existe el nota o no , si existe puedes eliminar ,el contrario si no existe no se puede eliminar y indicando error.**
 
-**Caso 4 - Para listar  los nombres de la nota de la lista tenemos que utilizar el paquete chalk y como el resultado saldr con el color corresponde de cada unos de ellos. **
+**Caso 4 - Para listar  los nombres de la nota de la lista tenemos que utilizar el paquete chalk y como el resultado saldr con el color corresponde de cada unos de ellos.**
 
 **Caso 5 - Si queremos leer una nota concreta, tenemos que comprobar si existe está lista con estas nota o no, si existe va salir con el color corresponde de paquete chalk, el contrario dará errores.**
 
