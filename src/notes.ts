@@ -12,7 +12,7 @@ export class Notes {
   private constructor() {}
 
   /**
-   * Static public method
+   * Static Method
    * @returns The corresponding object of the class
    */
 
@@ -23,39 +23,30 @@ export class Notes {
   }
 
   /**
-   * Public method that allows adding a note
-   * @param name Username
-   * @param title Note title
-   * @param body Note body
-   * @param color Note color
-   * @returns An informative chain
+   * Method that to add a new Note
    */
-
   addNote(name: string, title: string, body: string, colour: colours): string {
     const structure = `{ "title": "${title}", "body": "${body}" , "color": "${colour}" }`;
     const titleTogether = title.split(' ').join('');
-
-    //Check user
     if (fs.existsSync(`./database/${name}`) == true) {
       if (fs.existsSync(`./database/${name}/${titleTogether}.json`) == false) {
         fs.writeFileSync(`./database/${name}/${titleTogether}.json`, structure);
-        console.log(chalk.green(`New note added! title is: ${title}\nNote: If colour is NULL. Yellow is default colour.`));
-        return `New note added! with title: ${title}\nNote: If colour is NULL. Yellow is default colour.`;
+        console.log(chalk.green(`New note added! with title: ${title}\nNote: The color must be: red, green, blue, or yellow, yellow is the default color.`));
+        return `New note added! with title: ${title}\nNote: The color must be: red, green, blue, or yellow, yellow is the default color.`;
       } else {
-        console.log(chalk.red('Error: Note title is not ok!'));
-        return 'Error: Note title is not ok!';
+        console.log(chalk.red('Error: Note title taken!'));
+        return 'Error: Note title taken!';
       }
-      //New user
     } else {
       fs.mkdirSync(`./database/${name}`, {recursive: true});
       fs.writeFileSync(`./database/${name}/${titleTogether}.json`, structure);
-      console.log(chalk.green(`New note added! with title: ${title}\nNote: If colour is NULL. Yellow is default colour.`));
-      return `New note added! with title: ${title}\nNote: If colour is NULL. Yellow is default colour.`;
+      console.log(chalk.green(`New note added! with title: ${title}\nNote: The color must be: red, green, blue, or yellow, yellow is the default color.`));
+      return `New note added! with title: ${title}\nNote: The color must be: red, green, blue, or yellow, yellow is the default color.`;
     }
   }
 
   /**
-   * Public method that allows modifying a note
+   * Method that allows modifying a note
    * @param name Username
    * @param title Note title
    * @param body Note body
@@ -65,18 +56,15 @@ export class Notes {
   modifyNote(name: string, title: string, body: string, colour: colours): string {
     const structure = `{ "title": "${title}", "body": "${body}" , "color": "${colour}" }`;
     const titleTogether = title.split(' ').join('');
-
-    //Check user
     if (fs.existsSync(`./database/${name}`) == true) {
       if (fs.existsSync(`./database/${name}/${titleTogether}.json`) == true) {
         fs.writeFileSync(`./database/${name}/${titleTogether}.json`, structure);
-        console.log(chalk.green(`Modified note! with title: ${title}\nNote: If colour is NULL. Yellow is default colour.`));
-        return `Modified note! with title: ${title}\nNote: If colour is NULL. Yellow is default colour.`;
+        console.log(chalk.green(`Modified note! with title: ${title}\nNote: The color must be: red, green, blue, or yellow, yellow is the default color.`));
+        return `Modified note! with title: ${title}\nNote: The color must be: red, green, blue, or yellow, yellow is the default color.`;
       } else {
         console.log(chalk.red('Error: Title does not exist!'));
         return 'Error: Title does not exist!';
       }
-      //New user
     } else {
       console.log(chalk.red('Error: User not found!'));
       return 'Error: User not found!';
@@ -84,14 +72,14 @@ export class Notes {
   }
 
   /**
-   * Public method that allows to delete a note from a specific user through the title
+   * Method that allows to delete a note
    * @param name Username
    * @param title Note title
    * @returns An informative chain
    */
   removeNote(name: string, title: string): string {
     const titleTogether = title.split(' ').join('');
-    //Check user
+
     if (fs.existsSync(`./database/${name}`) == true) {
       if (fs.existsSync(`./database/${name}/${titleTogether}.json`) == true) {
         fs.rmSync(`./database/${name}/${titleTogether}.json`);
@@ -101,7 +89,6 @@ export class Notes {
         console.log(chalk.red('Error: Title does not exist!'));
         return 'Error: Title does not exist!';
       }
-      //New user
     } else {
       console.log(chalk.red('Error: User not found!'));
       return 'Error: User not found!';
@@ -109,12 +96,11 @@ export class Notes {
   }
 
   /**
-   * Public method that allows to list all the notes of a specific user with the corresponding titles
+   * Method that allows to list all the notes of a specific user with the corresponding titles
    * @param name Username
    * @returns An informative chain
    */
   listNotes(name: string): string {
-    //Check user
     if (fs.existsSync(`./database/${name}`) == true) {
       console.log(chalk.white('Your notes:' + '\n'));
       let aux: string = '';
@@ -125,7 +111,6 @@ export class Notes {
         aux = aux + `- ${dataJSON.title}` + '\n';
       });
       return aux;
-    //New user
     } else {
       console.log(chalk.red(`Error: User not found!`));
       return 'Error: User not found!';
@@ -133,15 +118,14 @@ export class Notes {
   }
 
   /**
-   * Public method that allows printing a specific note of a specific user
+   * Method that allows printing a specific note
    * @param name Username
    * @param title Note title
    * @returns An informative chain
    */
   readNote(name: string, title: string): string {
-    const titleTogether = title.split(' ').join('');
 
-    //Check user
+    const titleTogether = title.split(' ').join('');
     if (fs.existsSync(`./database/${name}`) == true) {
       if (fs.existsSync(`./database/${name}/${titleTogether}.json`) == true) {
         const data = fs.readFileSync(`./database/${name}/${titleTogether}.json`);
@@ -152,7 +136,6 @@ export class Notes {
         console.log(chalk.red('Error: Title does not exist!'));
         return 'Error: Title does not exist!';
       }
-    //New user
     } else {
       console.log(chalk.red('Error: User not found!'));
       return 'Error: User not found!';

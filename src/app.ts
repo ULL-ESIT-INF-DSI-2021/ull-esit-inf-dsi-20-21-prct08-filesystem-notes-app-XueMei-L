@@ -4,7 +4,7 @@ import * as yargs from 'yargs';
 const notes : Notes = Notes.getNotes();
 
 /**
- * Add the function for command
+ * Command to add a new note
  */
 yargs.command({
   command: 'add',
@@ -26,7 +26,7 @@ yargs.command({
       type: 'string',
     },
     color: {
-      describe: 'Note Color. All colours are: red, green, blue and yellow; Yellow is recognized as the default color',
+      describe: 'Note Color. The colors must be red, green, blue and yellow, yellow is the default color.',
       demandOption: true,
       type: 'string',
     },
