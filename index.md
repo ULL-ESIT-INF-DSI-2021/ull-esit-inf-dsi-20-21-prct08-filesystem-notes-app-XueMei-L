@@ -51,7 +51,7 @@ Sabemos que cada uno usuario solo puede hacer procesamiento de texto a través d
 
 Para ```caso 1 - añadir una nota``` , realizamos con el comando ``add`` la siguiente función, lo que hace es, crear una nueva nota, con el nombre, el titulo, el cuerpo y el color correspondiente. (La siguiente imagen se muestra la estructura de creación de cada comando)
 
-![image-20210426041636328](imagenes\image-20210426041636328.png)
+![image-20210426041636328](imagenes/image-20210426041636328.png)
 
 ````handler(argv) {
 handler(argv) {
@@ -70,7 +70,7 @@ handler(argv) {
 
 Y la siguiente imagen es la comprobación de comando ``add`` :
 
-![image-20210426042903205](C:\Users\linyouzi\AppData\Roaming\Typora\typora-user-images\image-20210426042903205.png)
+![image-20210426042903205](imagenes/image-20210426042903205.png)
 
 
 
@@ -92,7 +92,7 @@ handler(argv) {
 },
 ````
 
-![image-20210426042706028](C:\Users\linyouzi\AppData\Roaming\Typora\typora-user-images\image-20210426042706028.png)
+![image-20210426042706028](imagenes/image-20210426042706028.png)
 
 
 
@@ -124,7 +124,7 @@ yargs.command({
 });
 ``````
 
-![image-20210426043111566](C:\Users\linyouzi\AppData\Roaming\Typora\typora-user-images\image-20210426043111566.png)
+![image-20210426043111566](imagenes/image-20210426043111566.png)
 
 
 
@@ -151,7 +151,7 @@ yargs.command({
 });
 ``````
 
-![image-20210426044050552](C:\Users\linyouzi\AppData\Roaming\Typora\typora-user-images\image-20210426044050552.png)
+![image-20210426044050552](imagenes/image-20210426044050552.png)
 
 
 
@@ -185,7 +185,7 @@ yargs.command({
 
 Como hemos puesto en la tercera nota con el titulo ``Tercera nota`` , el cuerpo `Prueba_03`  y el color `azul`, por lo tanto a la hora de leer esa nota, nos muestra una su información correspondiente.
 
-![image-20210426044249933](C:\Users\linyouzi\AppData\Roaming\Typora\typora-user-images\image-20210426044249933.png)
+![image-20210426044249933](imagenes/image-20210426044249933.png)
 
 ## 4. API síncrona de Node.js para trabajar con el sistema de ficheros
 
@@ -195,25 +195,25 @@ Para el uso de API que proporciona por Nodes.js, tendremos que instalar el paque
 
 **Instalación del paquete**
 
-![image-20210426044858038](C:\Users\linyouzi\AppData\Roaming\Typora\typora-user-images\image-20210426044858038.png)
+![image-20210426044858038](imagenes/image-20210426044858038.png)
 
 
 
 **Uso de API**
 
-![image-20210426044930825](C:\Users\linyouzi\AppData\Roaming\Typora\typora-user-images\image-20210426044930825.png)
+![image-20210426044930825](imagenes/image-20210426044930825.png)
 
 ## 5. El paquete chalk
 
 El paquete chalk es similar que una dependencia del proyecto ya se incluyen los tipos para poder utilizarlo con TypeScript.
 
-![image-20210426045034781](C:\Users\linyouzi\AppData\Roaming\Typora\typora-user-images\image-20210426045034781.png)
+![image-20210426045034781](imagenes/image-20210426045034781.png)
 
 ## 6. El paquete yargs
 
 Yargs permite parsear diferentes argumentos pasados a un programa desde la línea de comandos. Más concretamente permite gestionar diferentes comandos, cada uno de ellos, con sus opciones y manejador correspondientes. Para el programa, necesita utilizar el paquete yargs, tenemos que instalar con lo siguiente comando:
 
-![image-20210426032531276](C:\Users\linyouzi\AppData\Roaming\Typora\typora-user-images\image-20210426032531276.png)
+![image-20210426032531276](imagenes/image-20210426032531276.png)
 
 luego, en el fichero de ```app.ts``` tiene que importar el fichero ```fs```, como está indicando abajo:
 
@@ -223,11 +223,11 @@ import * as yargs from 'yargs';
 
 Para describir el comando de ```add``` , utilizamos el ```yargs.command()```, dentro describimos el comando ``add``. Como la siguiente imagen:
 
-![image-20210426045400087](C:\Users\linyouzi\AppData\Roaming\Typora\typora-user-images\image-20210426045400087.png)
+![image-20210426045400087](imagenes/image-20210426045400087.png)
 
 Para poder procesar los argumentos pasados desde línea de comandos a la aplicación es importante que el punto de entrada o programa principal incluya la siguiente sentencia:
 
-![image-20210426033506482](C:\Users\linyouzi\AppData\Roaming\Typora\typora-user-images\image-20210426033506482.png)
+![image-20210426033506482](imagenes/image-20210426033506482.png)
 
 ## 7. Conclusiones
 
