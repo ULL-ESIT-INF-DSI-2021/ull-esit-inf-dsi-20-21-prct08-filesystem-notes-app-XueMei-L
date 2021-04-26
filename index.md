@@ -29,17 +29,17 @@ Los requisitos que debe cumplir la aplicación de procesamiento de notas de text
 
 Los siguientes son los casos necesarios que hay que implementar en la práctica.
 
-**Caso 1 - Añadir una nota, en este caso, tenemos que comprobar que si ya existe o no, es decir si tiene el mismo titulo que una nota almacenado. Si ya existe, saldrá errores.  
+**Caso 1 - Añadir una nota, en este caso, tenemos que comprobar que si ya existe o no, es decir si tiene el mismo titulo que una nota almacenado. Si ya existe, saldrá errores.**  
 
-**Caso 2 - Para modificar una nota de la lista, hay que comprobarlo si existe una una lista de la nota que vas a modificar, si existe podemos modificar la nota , el caso contrario, saldrá errores también.
+**Caso 2 - Para modificar una nota de la lista, hay que comprobarlo si existe una una lista de la nota que vas a modificar, si existe podemos modificar la nota , el caso contrario, saldrá errores también.**
 
-** Caso 3 - Realizar la eliminación de una nota, tenemos que comprobar si existe el nota o no , si existe puedes eliminar ,el contrario si no existe no se puede eliminar y indicando error.
+** Caso 3 - Realizar la eliminación de una nota, tenemos que comprobar si existe el nota o no , si existe puedes eliminar ,el contrario si no existe no se puede eliminar y indicando error.**
 
 **Caso 4 - Para listar  los nombres de la nota de la lista tenemos que utilizar el paquete chalk y como el resultado saldr con el color corresponde de cada unos de ellos. **
 
-**Caso 5 - Si queremos leer una nota concreta, tenemos que comprobar si existe está lista con estas nota o no, si existe va salir con el color corresponde de paquete chalk, el contrario dará errores.
+**Caso 5 - Si queremos leer una nota concreta, tenemos que comprobar si existe está lista con estas nota o no, si existe va salir con el color corresponde de paquete chalk, el contrario dará errores.**
 
-**Datos importantes:
+**Datos importantes:**
 
 Sabemos que las información tienen que ser con color verde, si es color rojo esta error. También sabemos que la lista de nota de cada usuario están permanente, y  para entrar el juego tiene que  usar la API síncrona de Node.js para trabajar con el sistema de ficheros:
 1- Tenemos que guardar cada una de la lista de nota al usuario corresponde.
